@@ -29,12 +29,12 @@ A fully functional **Library Management System** implemented in **C++** using **
 
 ## 🏗️ Project Structure
 
-Library_System/
-│
-├── include/ # Header files for all classes
-│ ├── Book.h
-│ ├── User.h
-│ ├── Student.h
+    Library_System/
+    │
+    ├── include/ # Header files for all classes
+    │ ├── Book.h
+    │ ├── User.h
+    │ ├── Student.h
 │ ├── Librarian.h
 | ├── Transaction.h
 │ └── DBConnector.h
@@ -74,10 +74,10 @@ SOURCE sql/schema.sql;
 ```
 
 ### ✅ 3. Build the Project
-g++ -Iinclude src/*.cpp -lmysqlcppconn -o LibrarySystem
+`g++ -Iinclude src/*.cpp -lmysqlcppconn -o LibrarySystem`
 
 ### ✅ 4. Run the Program
-./LibrarySystem
+`./LibrarySystem`
 
 
 ---
@@ -97,28 +97,28 @@ INSERT INTO Books (id, title, author, isAvailable) VALUES
 ---
 
 ## 🧱 Class Diagram (Object-Oriented Design)
-## 📄 UML-style Class Diagram (Text)
+### 📄 UML-style Class Diagram (Text)
 
-               +----------------+
-               |     User       |  <abstract>
-               +----------------+
-               | - id           |
-               | - name         |
-               | - email        |
-               +----------------+
-               | +getDetails()  |  <-- virtual
-               +----------------+
-                     ▲
-        +------------+------------+
-        |                         |
-+----------------+       +------------------+
-|   Student       |       |   Librarian      |
-+----------------+       +------------------+
-| - rollNumber    |       | - employeeId     |
-+----------------+       +------------------+
-| +getDetails()   |       | +getDetails()    |
-| +showMenu()     |       | +showMenu()      |
-+----------------+       +------------------+
+                       +----------------+
+                       |     User       |  <abstract>
+                       +----------------+
+                       | - id           |
+                       | - name         |
+                       | - email        |
+                       +----------------+
+                       | +getDetails()  |  <-- virtual
+                       +----------------+
+                             ▲
+                +------------+------------+
+                |                         |
+        +----------------+       +------------------+
+        |   Student       |       |   Librarian      |
+        +----------------+       +------------------+
+        | - rollNumber    |       | - employeeId     |
+        +----------------+       +------------------+
+        | +getDetails()   |       | +getDetails()    |
+        | +showMenu()     |       | +showMenu()      |
+        +----------------+       +------------------+
 
            +-------------+
            |    Book     |
@@ -128,9 +128,9 @@ INSERT INTO Books (id, title, author, isAvailable) VALUES
            | - author    |
            | - isAvail   |
            +-------------+
-           | +displayInfo()     |
-           | +markIssued()      |
-           | +markReturned()    |
+           | +displayInfo() |
+           | +markIssued()  |
+           | +markReturned() |
            +-------------+
 
            +-------------------+
@@ -153,32 +153,32 @@ INSERT INTO Books (id, title, author, isAvailable) VALUES
 
 ## 📄 UML-style Class Diagram (Text)
 
-+-----------+         +-----------+          +----------------+
-|   Users   |         |  Books    |          |  Transactions  |
-+-----------+         +-----------+          +----------------+
-| id (PK)   |         | id (PK)   |          | id (PK)        |
-| name      |         | title     |          | user_id (FK)   |
-| email     |         | author    |          | book_id (FK)   |
-| role      |         | isAvailable |        | action         |
-+-----------+         +-----------+          | timestamp      |
-                                             +----------------+
+    +-----------+         +-----------+          +----------------+
+    |   Users   |         |  Books    |          |  Transactions  |
+    +-----------+         +-----------+          +----------------+
+    | id (PK)   |         | id (PK)   |          | id (PK)        |
+    | name      |         | title     |          | user_id (FK)   |
+    | email     |         | author    |          | book_id (FK)   |
+    | role      |         | isAvailable |        | action         |
+    +-----------+         +-----------+          | timestamp      |
+                                                 +----------------+
 
-Relationships:
-Users ↔ Transactions: One-to-Many (user_id)
-Books ↔ Transactions: One-to-Many (book_id)
-
-
----
-
-![Example Outputs]("image.png")
+### Relationships:
+ - Users ↔ Transactions: One-to-Many (user_id)
+ - Books ↔ Transactions: One-to-Many (book_id)
 
 
 ---
 
-## 👨‍💻 Author
--Divyansh Agrawal
--IIT Bombay
--Library Management System — Summer Project 2025
+![Example Outputs](image.png)
+
+
+---
+
+### 👨‍💻 Author
+- Divyansh Agrawal
+- IIT Bombay
+- Library Management System — Summer Project 2025
 
 ## 📌 License   
 Copyright (c) 2025 Divyansh Agrawal
