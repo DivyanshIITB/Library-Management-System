@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "{",
+                "  \"configurations\": [",
+                "    {",
+                "      \"name\": \"Win32\",",
+                "      \"includePath\": [",
+                "        \"${workspaceFolder}/include\",",
+                "        \"C:\\Users\\divya\\OneDrive\\Desktop\\Summer/ '25\\Projects\\mysql-connector-c++-9.3.0-winx64\\include\"  // or wherever your MySQL headers are",
+                "      ],",
+                "      \"defines\": [],",
+                "      \"compilerPath\": \"C:/MinGW/bin/g++.exe\",",
+                "      \"cStandard\": \"c11\",",
+                "      \"cppStandard\": \"c++17\",",
+                "      \"intelliSenseMode\": \"windows-gcc-x64\"",
+                "    }",
+                "  ],",
+                "  \"version\": 4",
+                "}"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x86"
+        }
+    ],
+    "version": 4
+}

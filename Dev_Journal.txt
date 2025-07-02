@@ -1,0 +1,48 @@
+Refer to my handwritten notes for the learnings from the following implementations.
+
+Day 1:
+
+1.Made different entities, like user, student, books and defined their attributes which will be the data members in the class make for each entity.
+2.Made different folders like src/, include/, sql/, etc.
+3.Noted down the application areas of the 4 OOP Principles, Encapsulation, Inheritance, Polymorphism, and Abstraction for further implementations.
+4.Created header files for each of the class in /include folder. These header files contain the declarations of the various useful methods for each class, the definitions of which will be 
+  made inside the corresponding ".cpp" files include /src. 
+
+
+Day 2:
+
+1. Made the different cpp files for all the header files. Implemented polymorphism by defining override functions for which the definitions were done in our User Abstract class.
+2. Defined all the functions which were declared in the header files in these files. Also Noted some imp observations in my notebook.
+3. Made the main.cpp file in which we tested all the implementations using the in-memory test objects for each class. 
+4. Ran the program in VS Code Terminal, as well as in the Ubuntu (Linux) Terminal and got the correct results./
+5. Made a Makefile for ease of compiling and running files further. I can now compile and run files by just writing "make" and "make run" respectively.
+6. Donwloaded extension for bash to run makefile.
+
+
+Day 3:
+
+1. Made schema.sql file in which I created Librarydb, tables for user,student, librarian.
+2. Installed MySQL Connector, faced issues, took help from Chatgpt and finally succeeded in connection.
+3. Implemented DBConnector.cpp directly by taking some example test cases. We ran it in ubuntu, and not in gitbash, since it showed some error while installing mysql connector, which were 
+   quite tough to resolve. So ubuntu was suggested by gpt.
+4. First compiled and then ran the program, main.cpp. We cant use make and make run here, since they were defined without MySQL Connector. They cant be used to connect to db and hence would 
+   show error.
+5. Then modified Book.h, Book.cpp by including commands for DBConnector. Then tested it from main.cpp by making call to dbconnector via class Book instead of doing it directly as above.
+6. The results were as expected and we successfully tested the code!
+
+
+Day 4:
+
+1. Made all the necessary methods for issuing, returning, updating, deleting, viewing books and transactions. 
+2. Made the system robust by testing each and every functionality. For eg, the book must exist for deleting or updating it. This logic was not implemented initially. The output was, the       
+   book deleted successfully, or updated successfully even if the book was not present (Book Id was not of the books among the available ones).
+3. Also validated availability before issuing any book. And for returning the book, it should be issued first. This was also an issue which I came across while testing.
+4. Made Menu options (CLI) for Student and Librarian, i.e., enter as a student or a librarian. This was implemented in main.cpp. This made a call to showMenu for student or librarian, 
+   which in turn gave several options for issuing, adding books, etc.
+5. Transaction logs were added for every issue or return of the book which can be viewed by a librarian using View Transaction menu.
+6. At the end added the users entry in sql via mysql terminal, password is librarysql1365. This ensures only the authorized students librarians can access the functionalities.
+
+
+Day 5:
+
+1.

@@ -1,0 +1,17 @@
+# Binaries
+*.exe
+*.out
+LibrarySystem
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# CSV Exports
+*.csv
+
+# Other
+*.obj
+*.o
