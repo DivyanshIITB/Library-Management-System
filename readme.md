@@ -170,15 +170,15 @@ Books ↔ Transactions: One-to-Many (book_id)
 
 ---
 
-![Example Outputs]("C:\Users\divya\OneDrive\Pictures\Screenshots\Screenshot (1640).png")
+![Example Outputs]("image.png")
 
 
 ---
 
 ## 👨‍💻 Author
-Divyansh Agrawal
-IIT Bombay
-Library Management System — Summer Project 2025
+-Divyansh Agrawal
+-IIT Bombay
+-Library Management System — Summer Project 2025
 
 ## 📌 License   
 Copyright (c) 2025 Divyansh Agrawal
