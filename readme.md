@@ -151,7 +151,7 @@ INSERT INTO Books (id, title, author, isAvailable) VALUES
 
 ---
 
-## 📄 UML-style Class Diagram (Text)
+## 📊 ER Diagram (Database Design)
 
     +-----------+         +-----------+          +----------------+
     |   Users   |         |  Books    |          |  Transactions  |
