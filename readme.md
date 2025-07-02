@@ -35,24 +35,24 @@ A fully functional **Library Management System** implemented in **C++** using **
     │ ├── Book.h
     │ ├── User.h
     │ ├── Student.h
-│ ├── Librarian.h
-| ├── Transaction.h
-│ └── DBConnector.h
-│ 
-├── src/ # Source files
-│ ├── main.cpp
-│ ├── Book.cpp
-│ ├── User.cpp
-│ ├── Student.cpp
-│ ├── Librarian.cpp
-| ├── Transaction.cpp
-│ └── DBConnector.cpp
-│
-├── sql/
-│ └── schema.sql # DB schema (Users, Books, Transactions)
-│
-├── Makefile # Optional: For building project
-└── README.md # Project info
+    │ ├── Librarian.h
+    | ├── Transaction.h
+    │ └── DBConnector.h
+    │ 
+    ├── src/ # Source files
+    │ ├── main.cpp
+    │ ├── Book.cpp
+    │ ├── User.cpp
+    │ ├── Student.cpp
+    │ ├── Librarian.cpp
+    | ├── Transaction.cpp
+    │ └── DBConnector.cpp
+    │
+    ├── sql/
+    │ └── schema.sql # DB schema (Users, Books, Transactions)
+    │
+    ├── Makefile # Optional: For building project
+    └── README.md # Project info
 
 
 ---
