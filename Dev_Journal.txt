@@ -25,8 +25,8 @@ Day 3:
 2. Installed MySQL Connector, faced issues, took help from Chatgpt and finally succeeded in connection.
 3. Implemented DBConnector.cpp directly by taking some example test cases. We ran it in ubuntu, and not in gitbash, since it showed some error while installing mysql connector, which were 
    quite tough to resolve. So ubuntu was suggested by gpt.
-4. First compiled and then ran the program, main.cpp. We cant use make and make run here, since they were defined without MySQL Connector. They cant be used to connect to db and hence would 
-   show error.
+4. First compiled and then ran the program, main.cpp. We cant use make and make run here, since they were defined without MySQL Connector. They cant be used to connect to db and hence 
+   would show error.
 5. Then modified Book.h, Book.cpp by including commands for DBConnector. Then tested it from main.cpp by making call to dbconnector via class Book instead of doing it directly as above.
 6. The results were as expected and we successfully tested the code!
 
@@ -45,4 +45,7 @@ Day 4:
 
 Day 5:
 
-1.
+1. Already checked various test cases, like invalid bookId, non existent book n all.
+2. Made the readme.md file containing description, setup, screenshot of example, author and license.
+3. Added the project to GitHub.
+4. Successfully completed the project !!
