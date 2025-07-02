@@ -151,7 +151,7 @@ INSERT INTO Books (id, title, author, isAvailable) VALUES
 
 ---
 
-## 📊 ER Diagram (Database Design)
+## 📊 Database Design
 
     +-----------+         +-----------+          +----------------+
     |   Users   |         |  Books    |          |  Transactions  |
